@@ -1,11 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brolly ☔️ 👙</title>
-  </head>
-  <body>
-    <h1>The Weather App for Women</h1>
-  </body>
-</html>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="src/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
+        <title>SheMeteo</title>
+        <style>
+          body {
+            background-color: #947964;
+          }  
+          .current-weather {
+            background-color: rgb(181, 169, 143);
+            border-radius: 9px;
+            padding: 0 auto;
+            position: relative;
+            left: 300px;
+            width: 600px;
+            height: 450px;
+            box-shadow: 0 1px 8px rgb(44, 20, 8);
+            
+          }
+          h1 {
+            position: relative;
+            top: -310px;
+            left: 340px;
+            font-size: 40px;
+            font-weight: 500%;
+          }
+          .roboto-flex-grande {
+            font-family: "Roboto Flex", serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+            font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "XOPQ" 96,
+              "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514,
+              "YTUC" 712;
+              position: relative;
+              left: 340px;
+              top: -330px;
+              color: grey;
+          }
+          .red {
+            color:rgb(44, 20, 8)
+          }
+          .roboto-serif-media {
+            font-family: "Roboto Serif", serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+            font-variation-settings: "wdth" 100, "GRAD" 0;
+            font-size: 14px;
+            left: 340px;
+          }
+          .roboto-uniquifier {
+            font-family: "Roboto", serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+          }
+          .roboto-serif-pequena {
+            font-family: "Roboto Serif", serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            letter-spacing: 0.9px;
+            font-style: normal;
+            font-variation-settings: "wdth" 100, "GRAD" 0;
+            font-size: 10px;
+            position: relative;
+            left: 350px;
+            top: -500px;
+            color: grey;
+          }
+          .roboto-serif-14 {
+            font-family: "Roboto", serif;
+            font-optical-sizing: auto;
+            font-weight: 800%;
+            font-style: normal;
+            font-variation-settings: "wdth" 230;
+            font-size: 87px;
+            position: relative;
+            left: 676px;
+            top: -430px;
+           
+          }
+          a{
+            color: rgb(44, 20, 8);
+          }
+          form {
+            position: relative;
+            bottom: -40px;
+            right: -36px;
+          }
+          form input[type="submit"] {
+            font-family: "Roboto", serif;
+            font-size: 18px;
+            background-color: rgb(44, 20, 8); 
+            border: white; 
+            border-radius: 8px; 
+            padding: 15px 20px; 
+            cursor: pointer;
+            transition: back; 
+            color: white;
+          }
+          form input[placeholder="Enter a city.."] {
+            font-family: "Roboto", serif;
+            font-size: 18px;
+            background-color: #b19c80;
+            color: rgb(74, 44, 15); 
+            border: none; 
+            border-radius: 8px; 
+            padding: 15px 20px; 
+            cursor: pointer; 
+            width: 70%;
+          }
+          .small{
+            position:relative;
+            top: -560px;
+            left: 613px;
+            font-size: 50px;
+          }
+       </style>
+      </head>
+      <body>
+        <header>
+          <div class="current-weather">
+          <form class="form">
+            <input type="search" placeholder="Enter a city.." required />
+            <input type="submit" value="Search" />
+          </form>
+        </header>
+        <main>
+          <div>
+              <h1 class="roboto-uniquifier">Paris</h1>
+              <p class="roboto-flex-grande">
+                Saturday 15:32, moderate rain <br />
+                Humidity: <strong class="red">87%</strong>, Wind: <strong class="red">7.2km/h</strong>
+              </p>
+            </div>
+            <div class="roboto-serif-14">14°C</div><p class="small">☀️</p>
+          </div>
+        </main>
+        <hr />
+        <footer>
+          <p class="roboto-serif-pequena">
+            This project was coded by
+            <a href="#" target="_blank">Joana Araujo</a> and is
+            <a href="#" target="_blank"> on GitHub</a> and
+            <a href="#" target="_blank">hosted on Netlify</a>
+          </p>
+        </footer>
+      </div>
+      </body>
+      </html>
